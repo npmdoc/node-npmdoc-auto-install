@@ -1,17 +1,67 @@
 {
-    "buildNpmdoc":"auto-install",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "auto-install",
+    "dependencies": {
+        "async": "^2.3.0",
+        "ava": "^0.19.1",
+        "chokidar": "^1.6.1",
+        "colors": "^1.1.2",
+        "detective": "^4.5.0",
+        "detective-es6": "^1.1.6",
+        "electron": "^1.6.2",
+        "escodegen": "^1.8.1",
+        "esprima": "^3.1.3",
+        "estraverse": "^4.2.0",
+        "esutils": "^2.0.2",
+        "glob": "^7.1.1",
+        "handlebars": "^4.0.6",
+        "is-builtin-module": "^1.0.0",
+        "lodash": "^4.17.4",
+        "log-symbols": "^1.0.2",
+        "mkdirp": "^0.5.1",
+        "ora": "^1.2.0",
+        "package-json": "^4.0.0",
+        "request": "^2.81.0",
+        "source-map": "^0.5.6",
+        "sync-exec": "^0.6.2",
+        "yargs": "^7.1.0"
+    },
+    "description": "api documentation for [auto-install (v1.7.3)](https://github.com/siddharthkp/auto-install#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-auto-install.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-auto-install) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-auto-install.svg)](https://travis-ci.org/npmdoc/node-npmdoc-auto-install)",
     "devDependencies": {
         "auto-install": "*",
+        "chai": "^3.5.0",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "sync-exec": "^0.6.2",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-auto-install",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-auto-install",
+    "keywords": [
+        "documentation",
+        "auto-install"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_auto_install.js",
+    "name": "npmdoc-auto-install",
+    "nameAlias": "npmdoc_auto_install",
+    "nameOriginal": "npmdoc-auto-install",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-auto-install.git"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
