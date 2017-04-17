@@ -3,7 +3,9 @@
 
 [![NPM](https://nodei.co/npm/auto-install.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/auto-install)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-auto-install/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-auto-install/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-auto-install/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-auto-install/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-auto-install/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-auto-install/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-auto-install/build/screenCapture.npmPackageListing.svg)
 
@@ -95,16 +97,6 @@
     "version": "1.7.3"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module auto-install](#apidoc.module.auto-install)
-
-
-
-# <a name="apidoc.module.auto-install"></a>[module auto-install](#apidoc.module.auto-install)
 
 
 
