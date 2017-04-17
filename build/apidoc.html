@@ -61,12 +61,402 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.auto-install">module auto-install</a><ol>
 
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">auto-install.</span>helpers</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.auto-install.helpers">module auto-install.helpers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.auto-install.helpers.cleanup">
+            function <span class="apidocSignatureSpan">auto-install.helpers.</span>cleanup
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.auto-install.helpers.diff">
+            function <span class="apidocSignatureSpan">auto-install.helpers.</span>diff
+            <span class="apidocSignatureSpan">(first, second)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.auto-install.helpers.filterRegistryModules">
+            function <span class="apidocSignatureSpan">auto-install.helpers.</span>filterRegistryModules
+            <span class="apidocSignatureSpan">(modules)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.auto-install.helpers.getInstalledModules">
+            function <span class="apidocSignatureSpan">auto-install.helpers.</span>getInstalledModules
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.auto-install.helpers.getUsedModules">
+            function <span class="apidocSignatureSpan">auto-install.helpers.</span>getUsedModules
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.auto-install.helpers.installModule">
+            function <span class="apidocSignatureSpan">auto-install.helpers.</span>installModule
+            <span class="apidocSignatureSpan">(_ref2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.auto-install.helpers.installModuleIfTrusted">
+            function <span class="apidocSignatureSpan">auto-install.helpers.</span>installModuleIfTrusted
+            <span class="apidocSignatureSpan">(_ref4)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.auto-install.helpers.packageJSONExists">
+            function <span class="apidocSignatureSpan">auto-install.helpers.</span>packageJSONExists
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.auto-install.helpers.uninstallModule">
+            function <span class="apidocSignatureSpan">auto-install.helpers.</span>uninstallModule
+            <span class="apidocSignatureSpan">(_ref5)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.auto-install" id="apidoc.module.auto-install">module auto-install</a></h1>
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.auto-install.helpers" id="apidoc.module.auto-install.helpers">module auto-install.helpers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.auto-install.helpers.cleanup" id="apidoc.element.auto-install.helpers.cleanup">
+        function <span class="apidocSignatureSpan">auto-install.helpers.</span>cleanup
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cleanup() {
+    var spinner = startSpinner(&#x27;Cleaning up&#x27;, &#x27;green&#x27;);
+    if (argv.yarn) runCommand(&#x27;yarn&#x27;);else runCommand(&#x27;npm install&#x27;);
+    stopSpinner(spinner);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.auto-install.helpers.diff" id="apidoc.element.auto-install.helpers.diff">
+        function <span class="apidocSignatureSpan">auto-install.helpers.</span>diff
+        <span class="apidocSignatureSpan">(first, second)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function diff(first, second) {
+    var namesFromSecond = getNamesFromModules(second);
+    return first.filter(function (module) {
+        return !namesFromSecond.includes(module.name);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.auto-install.helpers.filterRegistryModules" id="apidoc.element.auto-install.helpers.filterRegistryModules">
+        function <span class="apidocSignatureSpan">auto-install.helpers.</span>filterRegistryModules
+        <span class="apidocSignatureSpan">(modules)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function filterRegistryModules(modules) {
+    return removeBuiltInModules(removeFilePaths(removeLocalFiles(modules)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.auto-install.helpers.getInstalledModules" id="apidoc.element.auto-install.helpers.getInstalledModules">
+        function <span class="apidocSignatureSpan">auto-install.helpers.</span>getInstalledModules
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getInstalledModules() {
+    var content = JSON.parse(readFile(&#x27;package.json&#x27;));
+    var installedModules = [];
+
+    var dependencies = content.dependencies || {};
+    var devDependencies = content.devDependencies || {};
+
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+        for (var _iterator = Object.keys(dependencies)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator
+.next()).done); _iteratorNormalCompletion = true) {
+            var key = _step.value;
+
+            installedModules.push({
+                name: key,
+                dev: false
+            });
+        }
+    } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+    } finally {
+        try {
+            if (!_iteratorNormalCompletion &#x26;&#x26; _iterator.return) {
+                _iterator.return();
+            }
+        } finally {
+            if (_didIteratorError) {
+                throw _iteratorError;
+            }
+        }
+    }
+
+    var _iteratorNormalCompletion2 = true;
+    var _didIteratorError2 = false;
+    var _iteratorError2 = undefined;
+
+    try {
+        for (var _iterator2 = Object.keys(devDependencies)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 =
+_iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+            var _key = _step2.value;
+
+            installedModules.push({
+                name: _key,
+                dev: true
+            });
+        }
+    } catch (err) {
+        _didIteratorError2 = true;
+        _iteratorError2 = err;
+    } finally {
+        try {
+            if (!_iteratorNormalCompletion2 &#x26;&#x26; _iterator2.return) {
+                _iterator2.return();
+            }
+        } finally {
+            if (_didIteratorError2) {
+                throw _iteratorError2;
+            }
+        }
+    }
+
+    return installedModules;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.auto-install.helpers.getUsedModules" id="apidoc.element.auto-install.helpers.getUsedModules">
+        function <span class="apidocSignatureSpan">auto-install.helpers.</span>getUsedModules
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getUsedModules() {
+    var files = getFiles();
+    var usedModules = [];
+    var _iteratorNormalCompletion4 = true;
+    var _didIteratorError4 = false;
+    var _iteratorError4 = undefined;
+
+    try {
+        for (var _iterator4 = files[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done
+); _iteratorNormalCompletion4 = true) {
+            var fileName = _step4.value;
+
+            var modulesFromFile = getModulesFromFile(fileName);
+            var dev = isTestFile(fileName);
+            var _iteratorNormalCompletion5 = true;
+            var _didIteratorError5 = false;
+            var _iteratorError5 = undefined;
+
+            try {
+                for (var _iterator5 = modulesFromFile[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5
+.next()).done); _iteratorNormalCompletion5 = true) {
+                    var name = _step5.value;
+                    usedModules.push({ name: name, dev: dev });
+                }
+            } catch (err) {
+                _didIteratorError5 = true;
+                _iteratorError5 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion5 &#x26;&#x26; _iterator5.return) {
+                        _iterator5.return();
+                    }
+                } finally {
+                    if (_didIteratorError5) {
+                        throw _iteratorError5;
+                    }
+                }
+            }
+        }
+    } catch (err) {
+        _didIteratorError4 = true;
+        _iteratorError4 = err;
+    } finally {
+        try {
+            if (!_iteratorNormalCompletion4 &#x26;&#x26; _iterator4.return) {
+                _iterator4.return();
+            }
+        } finally {
+            if (_didIteratorError4) {
+                throw _iteratorError4;
+            }
+        }
+    }
+
+    usedModules = deduplicate(usedModules);
+    return usedModules;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.auto-install.helpers.installModule" id="apidoc.element.auto-install.helpers.installModule">
+        function <span class="apidocSignatureSpan">auto-install.helpers.</span>installModule
+        <span class="apidocSignatureSpan">(_ref2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function installModule(_ref2) {
+    var name = _ref2.name;
+    var dev = _ref2.dev;
+
+    var spinner = startSpinner(&#x27;Installing &#x27; + name, &#x27;green&#x27;);
+
+    var command = getInstallCommand(name, dev);
+
+    var message = name + &#x27; installed&#x27;;
+    if (dev) message += &#x27; in devDependencies&#x27;;
+
+    var success = runCommand(command);
+    if (success) stopSpinner(spinner, message, &#x27;green&#x27;);else stopSpinner(spinner, name + &#x27; installation failed&#x27;, &#x27;yellow&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.auto-install.helpers.installModuleIfTrusted" id="apidoc.element.auto-install.helpers.installModuleIfTrusted">
+        function <span class="apidocSignatureSpan">auto-install.helpers.</span>installModuleIfTrusted
+        <span class="apidocSignatureSpan">(_ref4)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function installModuleIfTrusted(_ref4) {
+    var name = _ref4.name;
+    var dev = _ref4.dev;
+
+    // Trust scoped modules
+    if (isScopedModule(name)) installModule({ name: name, dev: dev });else {
+        isModulePopular(name, function (popular) {
+            // Popular as proxy for trusted
+            if (popular) installModule({ name: name, dev: dev });
+            // Trusted Author
+            else if (argv[&#x27;trust-author&#x27;]) installModuleIfTrustedAuthor({ name: name, dev: dev });
+                // Not trusted
+                else console.log(colors.red(name + &#x27; not trusted&#x27;));
+        });
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.auto-install.helpers.packageJSONExists" id="apidoc.element.auto-install.helpers.packageJSONExists">
+        function <span class="apidocSignatureSpan">auto-install.helpers.</span>packageJSONExists
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function packageJSONExists() {
+    return fs.existsSync(&#x27;package.json&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.auto-install.helpers.uninstallModule" id="apidoc.element.auto-install.helpers.uninstallModule">
+        function <span class="apidocSignatureSpan">auto-install.helpers.</span>uninstallModule
+        <span class="apidocSignatureSpan">(_ref5)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function uninstallModule(_ref5) {
+    var name = _ref5.name;
+    var dev = _ref5.dev;
+
+    if (dev) return;
+
+    var command = getUninstallCommand(name);
+    var message = name + &#x27; removed&#x27;;
+
+    var spinner = startSpinner(&#x27;Uninstalling &#x27; + name, &#x27;red&#x27;);
+    runCommand(command);
+    stopSpinner(spinner, message, &#x27;red&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 

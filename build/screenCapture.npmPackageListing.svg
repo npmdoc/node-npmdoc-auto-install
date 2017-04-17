@@ -1,33 +1,33 @@
 <svg height="478" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="478" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-15 19:58:24 +0000   540386 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-15 19:58:24 +0000     1517 bytes  README.md</tspan>
-<tspan x="10" y="58">  2.  2017-04-15 19:58:24 +0000   492678 bytes  demo.gif</tspan>
-<tspan x="10" y="74">  3.  2017-04-15 19:58:24 +0000      115 bytes  example/dummy.test.js</tspan>
-<tspan x="10" y="90">  4.  2017-04-15 19:58:24 +0000      344 bytes  example/es5.js</tspan>
-<tspan x="10" y="106">  5.  2017-04-15 19:58:24 +0000       89 bytes  example/es6.js</tspan>
-<tspan x="10" y="122">  6.  2017-04-15 19:58:24 +0000       44 bytes  example/mixed.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-15 19:58:24 +0000      320 bytes  example/package.json</tspan>
-<tspan x="10" y="154">  8.  2017-04-15 19:58:24 +0000    15618 bytes  lib/helpers.js</tspan>
-<tspan x="10" y="170">  9.  2017-04-15 19:58:24 +0000      806 bytes  lib/includes-polyfill.js</tspan>
-<tspan x="10" y="186"> 10.  2017-04-15 19:58:24 +0000     3392 bytes  lib/index.js</tspan>
-<tspan x="10" y="202"> 11.  2017-04-15 19:58:24 +0000     1077 bytes  license.md</tspan>
-<tspan x="10" y="218"> 12.  2017-04-15 19:58:24 +0000     4609 bytes  package.json</tspan>
-<tspan x="10" y="234"> 13.  2017-04-15 19:58:24 +0000     9961 bytes  src/helpers.js</tspan>
-<tspan x="10" y="250"> 14.  2017-04-15 19:58:24 +0000      749 bytes  src/includes-polyfill.js</tspan>
-<tspan x="10" y="266"> 15.  2017-04-15 19:58:24 +0000     1928 bytes  src/index.js</tspan>
-<tspan x="10" y="282"> 16.  2017-04-15 19:58:24 +0000      741 bytes  test/lib/diff.test.js</tspan>
-<tspan x="10" y="298"> 17.  2017-04-15 19:58:24 +0000      389 bytes  test/lib/filterRegistryModules.test.js</tspan>
-<tspan x="10" y="314"> 18.  2017-04-15 19:58:24 +0000      324 bytes  test/lib/getInstalledModules.test.js</tspan>
-<tspan x="10" y="330"> 19.  2017-04-15 19:58:24 +0000      304 bytes  test/lib/getUsedModules.test.js</tspan>
-<tspan x="10" y="346"> 20.  2017-04-15 19:58:24 +0000      511 bytes  test/lib/packageJSONExists.test.js</tspan>
-<tspan x="10" y="362"> 21.  2017-04-15 19:58:24 +0000     1375 bytes  test/lib/testData.js</tspan>
-<tspan x="10" y="378"> 22.  2017-04-15 19:58:24 +0000      714 bytes  test/src/diff.test.js</tspan>
-<tspan x="10" y="394"> 23.  2017-04-15 19:58:24 +0000      368 bytes  test/src/filterRegistryModules.test.js</tspan>
-<tspan x="10" y="410"> 24.  2017-04-15 19:58:24 +0000      303 bytes  test/src/getInstalledModules.test.js</tspan>
-<tspan x="10" y="426"> 25.  2017-04-15 19:58:24 +0000      283 bytes  test/src/getUsedModules.test.js</tspan>
-<tspan x="10" y="442"> 26.  2017-04-15 19:58:24 +0000      484 bytes  test/src/packageJSONExists.test.js</tspan>
-<tspan x="10" y="458"> 27.  2017-04-15 19:58:24 +0000     1343 bytes  test/src/testData.js</tspan>
+<tspan x="10" y="26">  0.  2017-04-17 15:06:01 +0000   540905 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-17 15:06:01 +0000     1517 bytes  README.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-17 15:06:01 +0000   492678 bytes  demo.gif</tspan>
+<tspan x="10" y="74">  3.  2017-04-17 15:06:01 +0000      115 bytes  example/dummy.test.js</tspan>
+<tspan x="10" y="90">  4.  2017-04-17 15:06:01 +0000      344 bytes  example/es5.js</tspan>
+<tspan x="10" y="106">  5.  2017-04-17 15:06:01 +0000       89 bytes  example/es6.js</tspan>
+<tspan x="10" y="122">  6.  2017-04-17 15:06:01 +0000       44 bytes  example/mixed.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-17 15:06:01 +0000      320 bytes  example/package.json</tspan>
+<tspan x="10" y="154">  8.  2017-04-17 15:06:01 +0000    15618 bytes  lib/helpers.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-17 15:06:01 +0000      806 bytes  lib/includes-polyfill.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-17 15:06:01 +0000     3392 bytes  lib/index.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-17 15:06:01 +0000     1077 bytes  license.md</tspan>
+<tspan x="10" y="218"> 12.  2017-04-17 15:06:01 +0000     5128 bytes  package.json</tspan>
+<tspan x="10" y="234"> 13.  2017-04-17 15:06:01 +0000     9961 bytes  src/helpers.js</tspan>
+<tspan x="10" y="250"> 14.  2017-04-17 15:06:01 +0000      749 bytes  src/includes-polyfill.js</tspan>
+<tspan x="10" y="266"> 15.  2017-04-17 15:06:01 +0000     1928 bytes  src/index.js</tspan>
+<tspan x="10" y="282"> 16.  2017-04-17 15:06:01 +0000      741 bytes  test/lib/diff.test.js</tspan>
+<tspan x="10" y="298"> 17.  2017-04-17 15:06:01 +0000      389 bytes  test/lib/filterRegistryModules.test.js</tspan>
+<tspan x="10" y="314"> 18.  2017-04-17 15:06:01 +0000      324 bytes  test/lib/getInstalledModules.test.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-17 15:06:01 +0000      304 bytes  test/lib/getUsedModules.test.js</tspan>
+<tspan x="10" y="346"> 20.  2017-04-17 15:06:01 +0000      511 bytes  test/lib/packageJSONExists.test.js</tspan>
+<tspan x="10" y="362"> 21.  2017-04-17 15:06:01 +0000     1375 bytes  test/lib/testData.js</tspan>
+<tspan x="10" y="378"> 22.  2017-04-17 15:06:01 +0000      714 bytes  test/src/diff.test.js</tspan>
+<tspan x="10" y="394"> 23.  2017-04-17 15:06:01 +0000      368 bytes  test/src/filterRegistryModules.test.js</tspan>
+<tspan x="10" y="410"> 24.  2017-04-17 15:06:01 +0000      303 bytes  test/src/getInstalledModules.test.js</tspan>
+<tspan x="10" y="426"> 25.  2017-04-17 15:06:01 +0000      283 bytes  test/src/getUsedModules.test.js</tspan>
+<tspan x="10" y="442"> 26.  2017-04-17 15:06:01 +0000      484 bytes  test/src/packageJSONExists.test.js</tspan>
+<tspan x="10" y="458"> 27.  2017-04-17 15:06:01 +0000     1343 bytes  test/src/testData.js</tspan>
 </text>
 </svg>
