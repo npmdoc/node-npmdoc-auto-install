@@ -1,4 +1,7 @@
-# api documentation for  [auto-install (v1.7.3)](https://github.com/siddharthkp/auto-install#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-auto-install.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-auto-install) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-auto-install.svg)](https://travis-ci.org/npmdoc/node-npmdoc-auto-install)
+# npmdoc-auto-install
+
+#### basic api documentation for  [auto-install (v1.7.3)](https://github.com/siddharthkp/auto-install#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-auto-install.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-auto-install) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-auto-install.svg)](https://travis-ci.org/npmdoc/node-npmdoc-auto-install)
+
 #### Auto installs dependencies as you code
 
 [![NPM](https://nodei.co/npm/auto-install.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/auto-install)
